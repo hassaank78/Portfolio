@@ -10,6 +10,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   width: 100%;
   height: 100%;
   background-color: #0D1117;
@@ -226,17 +227,43 @@ nav {
 .project-card.specific{
   margin-top: 80px;
 }
-/* Projects End */
+/* project end */
+/* Contact Start */
+.contact-form{
+  background-color: #040609;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
 
+input{
+  background: none;
+  padding: 10px;
+  color: #FFF;
+  outline: none;
+  border: 2px solid #8993be;
+  border-radius: 5px;
+}
 
+textarea{
+  color: #fff;
+  border: 2px solid #8993be;
+  border-radius: 5px;
+  background: none;
+  outline: none;
+}
 
-
-
-
-
-
-
+.submit{
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* Contact end */
 
 /* Media Queries */
 @media (max-width: 600px) {
@@ -341,6 +368,7 @@ nav {
     height: auto;
     flex-direction: column;
     margin-top: 20px;
+    flex-wrap: wrap;
     margin-left: 0px;
   }
 
@@ -359,4 +387,9 @@ nav {
   }
   /* Project End */
 
+  /* contact start */
+  .contact-form.specific{
+    margin-top: 100px;
+  }
+  /* contact end */
 }
