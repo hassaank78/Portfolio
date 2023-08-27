@@ -18,7 +18,7 @@
     <div class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="index.html">Skills</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
     </div>
@@ -29,12 +29,13 @@
     <div class="contact-form specific">
       <form action="https://formsubmit.co/hassankhan4408@gmail.com" method="POST">
         <label for="name">Name: </label>
-        <input type="text" name="name" placeholder="ENTER YOUR NAME">
+        <input type="text" name="name" placeholder="ENTER YOUR NAME" required>
         <label for="name">Email: </label>
-        <input type="email" name="email" placeholder="ENTER YOUR EMAIL">
+        <input type="email" name="email" placeholder="ENTER YOUR EMAIL" required>
         <label for="msg">Message: </label>
         <textarea name="msg" id="" cols="30" rows="10"></textarea>
         <input type="submit" class="submit" value="Submit">
+        <input type="hidden" name="_next" value="https://hassaank78.github.io/Portfolio/">
       </form>
     </div>
   </div>
